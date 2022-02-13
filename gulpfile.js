@@ -15,23 +15,20 @@ gulp.task('server', function () {
 });
 
 gulp.task('styles',function(){
-    return gulp.src("src/scss/*.+(scss|sass)")
+    return gulp.src("src/scss/**/*.+(scss|sass)")
         .pipe(sass.sync({ outputStyle: 'compressed' }).on('error', sass.logError))
         .pipe(rename({
             prefix: "",
             suffix: ".min",
         }))
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: false
-        }))
+        .pipe(autoprefixer())
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(gulp.dest("src/css"))
         .pipe(browserSync.stream());
 })
 
 gulp.task('watch',function(){
-    gulp.watch("src/scss/*.+(scss|sass)",gulp.parallel("styles"));
+    gulp.watch("src/scss/**/*.(scss|sass)",gulp.parallel("styles"));
     gulp.watch("src/*.html").on("change", browserSync.reload);
 });
 

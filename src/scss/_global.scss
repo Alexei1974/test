@@ -10,15 +10,15 @@
   box-sizing: border-box;
 }
 
-// :focus,
-// :active {
-//   outline: transparent;
-// }
+:focus,
+:active {
+  outline: transparent;
+}
 
-// a:focus,
-// a:active {
-//   outline: transparent;
-// }
+a:focus,
+a:active {
+  outline: transparent;
+}
 .js-focus-visible :focus:not(.focus-visible) {
   outline: 0;
 }
@@ -42,7 +42,6 @@ body {
   position: relative;
 }
 
-
 input,
 button,
 textarea {
@@ -55,6 +54,8 @@ input::-ms-clear {
 
 button {
   cursor: pointer;
+  background-color: transparent;
+  padding: 0;
 }
 
 button::-moz-focus-inner {
@@ -110,6 +111,25 @@ img {
 
 // ------------------------//
 
-body{
-  font-family:-apple-system, BlinkMacSystemFont, Arial, sans-serif;
+body {
+  font-family: "MuseoSansCyrl", sans-serif;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  background-color: $accent;
+  border-radius: 5px;
+  line-height: 1.2;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: color .5s linear;
+  &:hover{
+    background-color:#d63939;
+  }
 }
