@@ -32,7 +32,7 @@
 
   &__items {
     display: flex;
-	margin-bottom: 70px;
+    margin-bottom: 70px;
   }
 
   &__item {
@@ -47,23 +47,32 @@
       height: 46px;
       margin-bottom: 15px;
     }
-	&:last-child{
-		margin-left: 28px;
-	}
+    &+.promo__item{
+      margin-left: 15px;
+    }
+    
   }
 
   &__btn {
-	  padding: 19px 43px;
-	  font-size: 16px;
-line-height: 1.2;
-margin-bottom: 30px;
+    padding: 19px 43px;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 30px;
   }
 
   &__link {
-	  font-size: 16px;
-line-height: 1.2;
-font-weight: 500;
-color: #fff;
-text-decoration: underline;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #fff;
+   a{
+      text-decoration: underline;
+      color: #fff;
+      margin-left: 5px;
+      &:hover{
+        text-decoration: none;
+      }
+   }
+   
   }
 }
