@@ -63,6 +63,13 @@
     text-align: center;
   }
 }
+@media (max-width: 480px){
+  .modal__close{
+    right: 10px;
+    top: 10px;
+  }
+
+}
 @media (max-width: 420px) {
   .header__logo {
     width: 120px;
@@ -95,5 +102,9 @@
   .consultation{
     padding: 50px 0;
     min-height: 0;
+  }
+  .modal{
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

@@ -20,3 +20,11 @@
     margin-bottom: 30px;
   }
 }
+#consultation-form input.error {
+   border: 1px  solid red
+}
+#consultation-form label.error {
+  margin-bottom: 15px;
+  color: #fff;
+  text-align: center;
+}
