@@ -1,3 +1,9 @@
+@media (max-width: 992px) {
+  .catalog__content{
+    grid-template-columns: repeat(2 ,1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .advantages__items {
     flex-wrap: wrap;
@@ -6,6 +12,18 @@
   .advantages__item {
     max-width: 48%;
     margin-bottom: 25px;
+  }
+  .catalog__tabs{
+    flex-wrap: wrap;
+  }
+  .catalog__tab{
+    margin-bottom: 20px;
+  }
+  .catalog__tabs{
+    margin-bottom: 20px;
+  }
+  .catalog__title{
+    margin-bottom: 30px;
   }
 }
 
@@ -28,6 +46,21 @@
   }
   .promo__block {
     padding-top: 50px;
+  }
+  .catalog__content{
+    grid-template-columns: repeat(1 ,1fr);
+  }
+  .testimonial__box{
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .testimonial__box img{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 12px;
+  }
+  .testimonial__info{
+    text-align: center;
   }
 }
 @media (max-width: 420px) {
