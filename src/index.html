@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/slick.css">
+ 
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="promo">
+        <div class="promo" id="up">
             <div class="container">
                 <header class="header">
                     <div class="header__logo">
@@ -67,7 +67,7 @@
                     <div class="advantages__items">
                         <div class="advantages__item">
                             <div class="advantages__icon">
-                                <img src="icons/adv-icon-1.png" alt="">
+                                <img class="advantages__item--anim" src="icons/adv-icon-1.png" alt="">
                             </div>
                             <h3 class="advantages__item-title">
                                 Делимся опытом
@@ -80,7 +80,7 @@
                         </div>
                         <div class="advantages__item">
                             <div class="advantages__icon">
-                                <img src="icons/adv-icon-2.png" alt="">
+                                <img class="advantages__item--anim" src="icons/adv-icon-2.png" alt="">
                             </div>
                             <h3 class="advantages__item-title">
                                 Заботимся о здоровье
@@ -93,7 +93,7 @@
                         </div>
                         <div class="advantages__item">
                             <div class="advantages__icon">
-                                <img src="icons/adv-icon-3.png" alt="">
+                                <img class="advantages__item--anim" src="icons/adv-icon-3.png" alt="">
                             </div>
                             <h3 class="advantages__item-title">
                                 Учим бегать
@@ -177,7 +177,7 @@
                         </li>
                     </ul>
                     <div class="catalog__content catalog__content--active">
-                        <div class="catalog-item">
+                        <div class="catalog-item wow animate__animate animate__zoomIn" data-wow-duration="1s" data-wow-delay="1s">
                             <div class="catalog-item__wrapper">
                                 <div class="catalog-item__content catalog-item__content--active">
                                     <img src="images/catalog/catalog-1.png" alt="img" class="catalog-item__img">
@@ -208,7 +208,7 @@
                                 <button class="catalog-item__btn btn">КУПИТЬ</button>
                             </div>
                         </div>
-                        <div class="catalog-item">
+                        <div class="catalog-item wow animate__animate animate__zoomIn" data-wow-duration="1.1s" data-wow-delay="1.1s">
                             <div class="catalog-item__wrapper">
                                 <div class="catalog-item__content catalog-item__content--active">
                                     <img src="images/catalog/catalog-1.png" alt="img" class="catalog-item__img">
@@ -239,7 +239,7 @@
                                 <button class="catalog-item__btn btn">КУПИТЬ</button>
                             </div>
                         </div>
-                        <div class="catalog-item">
+                        <div class="catalog-item wow animate__animate animate__zoomIn" data-wow-duration="1.2s" data-wow-delay="1.2s">
                             <div class="catalog-item__wrapper">
                                 <div class="catalog-item__content catalog-item__content--active">
                                     <img src="images/catalog/catalog-1.png" alt="img" class="catalog-item__img">
@@ -270,7 +270,7 @@
                                 <button class="catalog-item__btn btn">КУПИТЬ</button>
                             </div>
                         </div>
-                        <div class="catalog-item">
+                        <div class="catalog-item wow animate__animate animate__zoomIn" data-wow-duration="1.3s" data-wow-delay="1.3s">
                             <div class="catalog-item__wrapper">
                                 <div class="catalog-item__content catalog-item__content--active">
                                     <img src="images/catalog/catalog-1.png" alt="img" class="catalog-item__img">
@@ -301,7 +301,7 @@
                                 <button class="catalog-item__btn btn">КУПИТЬ</button>
                             </div>
                         </div>
-                        <div class="catalog-item">
+                        <div class="catalog-item wow animate__animate animate__zoomIn" data-wow-duration="1.4s" data-wow-delay="1.4s">
                             <div class="catalog-item__wrapper">
                                 <div class="catalog-item__content catalog-item__content--active">
                                     <img src="images/catalog/catalog-1.png" alt="img" class="catalog-item__img">
@@ -332,7 +332,7 @@
                                 <button class="catalog-item__btn btn">КУПИТЬ</button>
                             </div>
                         </div>
-                        <div class="catalog-item">
+                        <div class="catalog-item wow animate__animate animate__zoomIn" data-wow-duration="1.5s" data-wow-delay="1.5s">
                             <div class="catalog-item__wrapper">
                                 <div class="catalog-item__content catalog-item__content--active">
                                     <img src="images/catalog/catalog-1.png" alt="img" class="catalog-item__img">
@@ -562,7 +562,7 @@
                     <h2 class="title testimonial__title">
                         отзывы клиентов
                     </h2>
-                    <div class="testimonial__box">
+                    <div class="testimonial__box wow animate__animated animate__fadeInLeftBig" data-wow-duration="1s" data-wow-delay="1s">
                         <img src="images/testimonial/foto-1.jpg" alt="img">
                         <div class="testimonial__info">
                             <div class="testimonial__name">
@@ -579,7 +579,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial__box">
+                    <div class="testimonial__box wow animate__animated animate__fadeInLeftBig" data-wow-duration="1.2s" data-wow-delay="1.2s">
                         <img src="images/testimonial/foto-2.jpg" alt="img">
                         <div class="testimonial__info">
                             <div class="testimonial__name">
@@ -594,7 +594,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial__box">
+                    <div class="testimonial__box wow animate__animated animate__fadeInLeftBig" data-wow-duration="1.4s" data-wow-delay="1.4s">
                         <img src="images/testimonial/foto-3.jpg" alt="img">
                         <div class="testimonial__info">
                             <div class="testimonial__name">
@@ -675,11 +675,15 @@
             </div>
         </div>
     </div>
+    <a href="#up" class="pageup">
+        <img src="icons/circle-arrow-up-solid.svg" alt="">
+    </a>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="js/jquery.validate.min.js"></script>
         <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
